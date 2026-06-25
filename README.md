@@ -1,4 +1,4 @@
-@ -1,172 +0,0 @@
+
 <div align="center">
 
 <img src="https://raw.githubusercontent.com/Aryawnfz/Aryawnfz/main/assets/banner.svg" width="100%" alt="Aryan Firoozzareh"/>
