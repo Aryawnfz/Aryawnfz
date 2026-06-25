@@ -1,0 +1,96 @@
+<svg width="640" height="250" viewBox="0 0 640 250" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="termBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#080C12"/>
+      <stop offset="100%" stop-color="#0D1117"/>
+    </linearGradient>
+    <linearGradient id="titleBarBg" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#161B22"/>
+      <stop offset="100%" stop-color="#1C2128"/>
+    </linearGradient>
+    <linearGradient id="borderGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#6D28D9" stop-opacity="0.80"/>
+      <stop offset="50%" stop-color="#4F46E5" stop-opacity="0.50"/>
+      <stop offset="100%" stop-color="#0EA5E9" stop-opacity="0.80"/>
+    </linearGradient>
+    <linearGradient id="topEdge" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#6D28D9" stop-opacity="0"/>
+      <stop offset="30%" stop-color="#818CF8" stop-opacity="0.90"/>
+      <stop offset="70%" stop-color="#22D3EE" stop-opacity="0.90"/>
+      <stop offset="100%" stop-color="#0EA5E9" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="glassGlow">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <clipPath id="termClip">
+      <rect width="640" height="250" rx="16"/>
+    </clipPath>
+  </defs>
+
+  <g clip-path="url(#termClip)">
+    <!-- Background -->
+    <rect width="640" height="250" fill="url(#termBg)"/>
+
+    <!-- Title bar -->
+    <rect width="640" height="38" fill="url(#titleBarBg)"/>
+
+    <!-- Title bar separator line with glass colour -->
+    <line x1="0" y1="38" x2="640" y2="38" stroke="url(#topEdge)" stroke-width="1.5" opacity="0.60"/>
+
+    <!-- Traffic light buttons -->
+    <circle cx="24" cy="19" r="6.5" fill="#FF5F56"/>
+    <circle cx="24" cy="19" r="6.5" fill="#ffffff" opacity="0.12"/>
+    <circle cx="46" cy="19" r="6.5" fill="#FFBD2E"/>
+    <circle cx="46" cy="19" r="6.5" fill="#ffffff" opacity="0.12"/>
+    <circle cx="68" cy="19" r="6.5" fill="#27C93F"/>
+    <circle cx="68" cy="19" r="6.5" fill="#ffffff" opacity="0.12"/>
+
+    <!-- Title text -->
+    <text x="320" y="24" font-family="Consolas, Menlo, SF Mono, monospace" font-size="13" fill="#8B949E" text-anchor="middle">aryan@sorindata: ~/basir</text>
+
+    <!-- Subtle noise texture effect via repeating pattern -->
+    <rect width="640" height="212" y="38" fill="#ffffff" opacity="0.015"/>
+
+    <!-- Terminal content -->
+    <text x="26" y="76" font-family="Consolas, Menlo, SF Mono, monospace" font-size="15" fill="#58A6FF" opacity="0">
+      $ python basir.py --target telegram
+      <animate attributeName="opacity" from="0" to="1" begin="0.3s" dur="0.35s" fill="freeze"/>
+    </text>
+
+    <text x="26" y="108" font-family="Consolas, Menlo, SF Mono, monospace" font-size="15" fill="#3FB950" opacity="0">
+      [+] Connecting to Telegram API...
+      <animate attributeName="opacity" from="0" to="1" begin="1.1s" dur="0.35s" fill="freeze"/>
+    </text>
+    <text x="410" y="108" font-family="Consolas, Menlo, SF Mono, monospace" font-size="15" fill="#A3E635" opacity="0">
+      OK ✓
+      <animate attributeName="opacity" from="0" to="1" begin="1.6s" dur="0.35s" fill="freeze"/>
+    </text>
+
+    <text x="26" y="140" font-family="Consolas, Menlo, SF Mono, monospace" font-size="15" fill="#3FB950" opacity="0">
+      [+] Scanning channels for keywords...
+      <animate attributeName="opacity" from="0" to="1" begin="2.1s" dur="0.35s" fill="freeze"/>
+    </text>
+
+    <text x="26" y="172" font-family="Consolas, Menlo, SF Mono, monospace" font-size="15" fill="#3FB950" opacity="0">
+      [+] Generating report... done ✓
+      <animate attributeName="opacity" from="0" to="1" begin="3.0s" dur="0.35s" fill="freeze"/>
+    </text>
+
+    <text x="26" y="210" font-family="Consolas, Menlo, SF Mono, monospace" font-size="15" fill="#58A6FF" opacity="0">
+      $ ready to ship 🚀
+      <animate attributeName="opacity" from="0" to="1" begin="3.9s" dur="0.35s" fill="freeze"/>
+    </text>
+
+    <!-- Blinking cursor -->
+    <rect x="207" y="197" width="9" height="16" rx="1" fill="#C9D1D9" opacity="0">
+      <animate attributeName="opacity" from="0" to="1" begin="4.3s" dur="0.1s" fill="freeze"/>
+      <animate attributeName="opacity" values="1;0;1" begin="4.3s" dur="1s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+
+  <!-- Glass border with colour gradient -->
+  <rect width="639" height="249" x="0.5" y="0.5" rx="15.5" fill="none" stroke="url(#borderGrad)" stroke-width="1.5"/>
+  <!-- Top edge specular highlight -->
+  <path d="M18 1 Q320 -2 622 1" stroke="url(#topEdge)" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+</svg>
