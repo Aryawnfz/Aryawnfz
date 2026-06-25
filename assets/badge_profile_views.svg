@@ -1,0 +1,37 @@
+<svg viewBox="0 0 220 44" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4C1D95"/>
+      <stop offset="100%" stop-color="#7C3AED"/>
+    </linearGradient>
+    <linearGradient id="glass" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.35"/>
+      <stop offset="50%" stop-color="#ffffff" stop-opacity="0.10"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.04"/>
+    </linearGradient>
+    <linearGradient id="stroke" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.80"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.18"/>
+    </linearGradient>
+    <clipPath id="clip"><rect width="220" height="44" rx="22"/></clipPath>
+  </defs>
+  <g clip-path="url(#clip)">
+    <rect width="220" height="44" fill="url(#bg)"/>
+    <rect width="220" height="44" fill="url(#glass)"/>
+    <rect x="0" y="0" width="220" height="18" rx="18" fill="#ffffff" opacity="0.08"/>
+  </g>
+  <rect width="219" height="43" x="0.5" y="0.5" rx="21.5" fill="none" stroke="url(#stroke)" stroke-width="1"/>
+  <!-- Eye icon -->
+  <g transform="translate(14, 14)">
+    <ellipse cx="8" cy="8" rx="8" ry="5.5" fill="none" stroke="#ffffff" stroke-width="1.5" opacity="0.95"/>
+    <circle cx="8" cy="8" r="2.8" fill="#ffffff" opacity="0.95"/>
+    <!-- glint -->
+    <circle cx="9.5" cy="6.5" r="1" fill="#ffffff" opacity="0.6"/>
+  </g>
+  <text x="120" y="28" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="14" font-weight="600" fill="#ffffff" letter-spacing="0.3">Profile Views</text>
+  <!-- animated dot to show "live" -->
+  <circle cx="204" cy="22" r="4" fill="#A78BFA" opacity="0.9">
+    <animate attributeName="opacity" values="0.9;0.3;0.9" dur="2s" repeatCount="indefinite"/>
+    <animate attributeName="r" values="4;5.5;4" dur="2s" repeatCount="indefinite"/>
+  </circle>
+</svg>
