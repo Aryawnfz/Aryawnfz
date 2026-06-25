@@ -1,0 +1,23 @@
+<svg viewBox="0 0 1200 6" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="dgrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#6D28D9"/>
+      <stop offset="50%" stop-color="#4F46E5"/>
+      <stop offset="100%" stop-color="#0EA5E9"/>
+    </linearGradient>
+    <linearGradient id="dshine" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#ffffff" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+    <clipPath id="dclip">
+      <rect x="0" y="0" width="1200" height="6" rx="3"/>
+    </clipPath>
+  </defs>
+  <g clip-path="url(#dclip)">
+    <rect width="1200" height="6" fill="url(#dgrad)" opacity="0.55"/>
+    <rect x="-300" y="0" width="300" height="6" fill="url(#dshine)">
+      <animateTransform attributeName="transform" type="translate" from="-300 0" to="1500 0" dur="3.5s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+</svg>
