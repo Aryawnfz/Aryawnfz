@@ -28,7 +28,7 @@
     <!-- glint -->
     <circle cx="9.5" cy="6.5" r="1" fill="#ffffff" opacity="0.6"/>
   </g>
-  <text x="120" y="28" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="14" font-weight="600" fill="#ffffff" letter-spacing="0.3">Profile Views</text>
+  <text x="120" y="28" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="14" font-weight="600" fill="#ffffff" letter-spacing="0.3">FullStack-Midlevel</text>
   <!-- animated dot to show "live" -->
   <circle cx="204" cy="22" r="4" fill="#A78BFA" opacity="0.9">
     <animate attributeName="opacity" values="0.9;0.3;0.9" dur="2s" repeatCount="indefinite"/>
