@@ -26,8 +26,7 @@
 &nbsp;
 <img src="https://raw.githubusercontent.com/Aryawnfz/Aryawnfz/main/assets/badge_location.svg" height="44" alt="Tehran, Iran"/>
 &nbsp;
-<img src="https://komarev.com/ghpvc/?username=Aryawnfz&color=7C3AED&style=for-the-badge&label=PROFILE+VIEWS" height="44" alt="Profile Views"/>
-
+<img src="https://raw.githubusercontent.com/Aryawnfz/Aryawnfz/main/assets/badge_profile_views.svg" height="44" alt="Profile Views"/>
 </div>
 
 <br/>
