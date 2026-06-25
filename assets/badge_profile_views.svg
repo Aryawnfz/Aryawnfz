@@ -21,13 +21,12 @@
     <rect x="0" y="0" width="220" height="18" rx="18" fill="#ffffff" opacity="0.08"/>
   </g>
   <rect width="219" height="43" x="0.5" y="0.5" rx="21.5" fill="none" stroke="url(#stroke)" stroke-width="1"/>
-  <!-- Eye icon -->
-  <g transform="translate(14, 14)">
-    <ellipse cx="8" cy="8" rx="8" ry="5.5" fill="none" stroke="#ffffff" stroke-width="1.5" opacity="0.95"/>
-    <circle cx="8" cy="8" r="2.8" fill="#ffffff" opacity="0.95"/>
-    <!-- glint -->
-    <circle cx="9.5" cy="6.5" r="1" fill="#ffffff" opacity="0.6"/>
-  </g>
+<!-- Code bracket icon -->
+<g transform="translate(13, 12)" fill="none" stroke="#ffffff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" opacity="0.95">
+  <polyline points="6,4 2,10 6,16"/>
+  <polyline points="10,4 14,10 10,16"/>
+  <line x1="7.5" y1="2" x2="8.5" y2="18" opacity="0.5"/>
+</g>
   <text x="120" y="28" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="14" font-weight="600" fill="#ffffff" letter-spacing="0.3">FullStack-Midlevel</text>
   <!-- animated dot to show "live" -->
   <circle cx="204" cy="22" r="4" fill="#A78BFA" opacity="0.9">
