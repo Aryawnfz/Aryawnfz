@@ -129,9 +129,7 @@ Forwards messages from **Telegram** to **Bale**, **Eitaa** and **Rubika** in rea
 </tr>
 </table>
 
-<div align="center">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=Aryawnfz&repo=Basir_Bale&theme=tokyonight&hide_border=true" width="420"/>
-</div>
+
 
 <br/>
 <img src="https://raw.githubusercontent.com/Aryawnfz/Aryawnfz/main/assets/divider.svg" width="100%"/>
