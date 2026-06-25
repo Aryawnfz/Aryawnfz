@@ -26,7 +26,7 @@
 &nbsp;
 <img src="https://raw.githubusercontent.com/Aryawnfz/Aryawnfz/main/assets/badge_location.svg" height="44" alt="Tehran, Iran"/>
 &nbsp;
-<img src="https://raw.githubusercontent.com/Aryawnfz/Aryawnfz/main/assets/badge_profile_views.svg" height="44" alt="Profile Views"/>
+<img src="https://raw.githubusercontent.com/Aryawnfz/Aryawnfz/main/assets/badge_profile_views.svg" height="44" alt="FullStack Midlevel"/>
 </div>
 
 <br/>
