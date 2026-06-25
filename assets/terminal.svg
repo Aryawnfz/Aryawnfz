@@ -1,0 +1,48 @@
+<svg width="600" height="230" viewBox="0 0 600 230" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <clipPath id="round">
+      <rect width="600" height="230" rx="14" ry="14"/>
+    </clipPath>
+  </defs>
+
+  <g clip-path="url(#round)">
+    <rect width="600" height="230" fill="#0d1117"/>
+    <rect width="600" height="34" fill="#161b22"/>
+    <circle cx="22" cy="17" r="6" fill="#ff5f56"/>
+    <circle cx="44" cy="17" r="6" fill="#ffbd2e"/>
+    <circle cx="66" cy="17" r="6" fill="#27c93f"/>
+    <text x="300" y="22" font-family="Consolas, Menlo, monospace" font-size="13" fill="#8b949e" text-anchor="middle">aryan@sorindata: ~/basir</text>
+
+    <text x="24" y="68" font-family="Consolas, Menlo, monospace" font-size="16" fill="#58a6ff" opacity="0">
+      $ python basir.py --target telegram
+      <animate attributeName="opacity" from="0" to="1" begin="0.3s" dur="0.4s" fill="freeze"/>
+    </text>
+
+    <text x="24" y="100" font-family="Consolas, Menlo, monospace" font-size="16" fill="#3fb950" opacity="0">
+      [+] Connecting to Telegram API... OK
+      <animate attributeName="opacity" from="0" to="1" begin="1.1s" dur="0.4s" fill="freeze"/>
+    </text>
+
+    <text x="24" y="132" font-family="Consolas, Menlo, monospace" font-size="16" fill="#3fb950" opacity="0">
+      [+] Scanning channels for keywords...
+      <animate attributeName="opacity" from="0" to="1" begin="1.9s" dur="0.4s" fill="freeze"/>
+    </text>
+
+    <text x="24" y="164" font-family="Consolas, Menlo, monospace" font-size="16" fill="#3fb950" opacity="0">
+      [+] Generating report... done
+      <animate attributeName="opacity" from="0" to="1" begin="2.7s" dur="0.4s" fill="freeze"/>
+    </text>
+
+    <text x="24" y="196" font-family="Consolas, Menlo, monospace" font-size="16" fill="#58a6ff" opacity="0">
+      $ ready to ship
+      <animate attributeName="opacity" from="0" to="1" begin="3.6s" dur="0.4s" fill="freeze"/>
+    </text>
+
+    <rect x="155" y="184" width="10" height="16" fill="#c9d1d9" opacity="0">
+      <animate attributeName="opacity" from="0" to="1" begin="4.1s" dur="0.1s" fill="freeze"/>
+      <animate attributeName="opacity" values="1;0;1" begin="4.1s" dur="1s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+
+  <rect width="599" height="229" x="0.5" y="0.5" rx="14" ry="14" fill="none" stroke="#30363d" stroke-width="1"/>
+</svg>
