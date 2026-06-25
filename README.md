@@ -2,21 +2,30 @@
 
 <img src="https://raw.githubusercontent.com/Aryawnfz/Aryawnfz/main/assets/banner.svg" width="100%" alt="Aryan Firoozzareh"/>
 
+<br/>
+
 <a href="https://git.io/typing-svg">
   <img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&size=22&pause=1000&color=8B5CF6&center=true&vCenter=true&width=700&lines=Building+Basir+%40+SorinData+%F0%9F%9A%80;Python+%7C+Selenium+%7C+Automation+%F0%9F%A4%96;Now+leveling+up+with+.NET+%26+ASP.NET+Core+%E2%9A%99%EF%B8%8F" alt="Typing SVG" />
 </a>
 
 <br/><br/>
 
-<a href="https://t.me/Aryan_Zare"><img src="https://img.shields.io/badge/Telegram-26A5E4?style=for-the-badge&logo=telegram&logoColor=white"/></a>
-<a href="mailto:zarearyan2006@gmail.com"><img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white"/></a>
-<a href="https://www.instagram.com/aryawnfz"><img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white"/></a>
-<a href="https://www.youtube.com/@aryawnfz"><img src="https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white"/></a>
+<!-- Glass Social Badges -->
+<a href="https://t.me/Aryan_Zare"><img src="https://raw.githubusercontent.com/Aryawnfz/Aryawnfz/main/assets/badge_telegram.svg" height="44" alt="Telegram"/></a>
+&nbsp;
+<a href="mailto:zarearyan2006@gmail.com"><img src="https://raw.githubusercontent.com/Aryawnfz/Aryawnfz/main/assets/badge_email.svg" height="44" alt="Email"/></a>
+&nbsp;
+<a href="https://www.instagram.com/aryawnfz"><img src="https://raw.githubusercontent.com/Aryawnfz/Aryawnfz/main/assets/badge_instagram.svg" height="44" alt="Instagram"/></a>
+&nbsp;
+<a href="https://www.youtube.com/@aryawnfz"><img src="https://raw.githubusercontent.com/Aryawnfz/Aryawnfz/main/assets/badge_youtube.svg" height="44" alt="YouTube"/></a>
 
-<br/>
+<br/><br/>
 
-<img src="https://img.shields.io/badge/Currently%20Working%20At-SorinData-8B5CF6?style=for-the-badge"/>
-<img src="https://img.shields.io/badge/📍-Tehran%2C%20Iran-0EA5E9?style=for-the-badge"/>
+<!-- Glass Info Badges -->
+<img src="https://raw.githubusercontent.com/Aryawnfz/Aryawnfz/main/assets/badge_work.svg" height="44" alt="Currently at SorinData"/>
+&nbsp;
+<img src="https://raw.githubusercontent.com/Aryawnfz/Aryawnfz/main/assets/badge_location.svg" height="44" alt="Tehran, Iran"/>
+&nbsp;
 <img src="https://komarev.com/ghpvc/?username=Aryawnfz&color=6366f1&style=for-the-badge&label=PROFILE+VIEWS" alt="profile views"/>
 
 </div>
@@ -26,14 +35,18 @@
 <br/>
 
 <div align="center">
-  <img src="https://raw.githubusercontent.com/Aryawnfz/Aryawnfz/main/assets/terminal.svg" width="560"/>
+  <img src="https://raw.githubusercontent.com/Aryawnfz/Aryawnfz/main/assets/terminal.svg" width="580"/>
 </div>
 
 <br/>
 <img src="https://raw.githubusercontent.com/Aryawnfz/Aryawnfz/main/assets/divider.svg" width="100%"/>
 <br/>
 
-## 👨‍💻 About Me
+<div align="center">
+  <img src="https://raw.githubusercontent.com/Aryawnfz/Aryawnfz/main/assets/header_about.svg" height="56" alt="About Me"/>
+</div>
+
+<br/>
 
 ```python
 class AryanFiroozzareh:
@@ -44,9 +57,11 @@ class AryanFiroozzareh:
         self.location = "Tehran, Iran 🇮🇷"
 
     def current_goal(self):
-        return ("Building smart automation tools that save people real time, "
-                "while expanding into backend development with .NET to grow "
-                "into a well-rounded, full-stack software engineer.")
+        return (
+            "Building smart automation tools that save people real time, "
+            "while expanding into backend development with .NET to grow "
+            "into a well-rounded, full-stack software engineer."
+        )
 ```
 
 - 💼 Currently working at **SorinData**
@@ -60,7 +75,11 @@ class AryanFiroozzareh:
 <img src="https://raw.githubusercontent.com/Aryawnfz/Aryawnfz/main/assets/divider.svg" width="100%"/>
 <br/>
 
-## 🛠️ Tech Stack
+<div align="center">
+  <img src="https://raw.githubusercontent.com/Aryawnfz/Aryawnfz/main/assets/header_tech.svg" height="56" alt="Tech Stack"/>
+</div>
+
+<br/>
 
 <div align="center">
 
@@ -80,7 +99,11 @@ class AryanFiroozzareh:
 <img src="https://raw.githubusercontent.com/Aryawnfz/Aryawnfz/main/assets/divider.svg" width="100%"/>
 <br/>
 
-## 🚀 Featured Projects
+<div align="center">
+  <img src="https://raw.githubusercontent.com/Aryawnfz/Aryawnfz/main/assets/header_projects.svg" height="56" alt="Featured Projects"/>
+</div>
+
+<br/>
 
 <table width="100%">
 <tr>
@@ -114,7 +137,11 @@ Forwards messages from **Telegram** to **Bale**, **Eitaa** and **Rubika** in rea
 <img src="https://raw.githubusercontent.com/Aryawnfz/Aryawnfz/main/assets/divider.svg" width="100%"/>
 <br/>
 
-## 📊 GitHub Stats
+<div align="center">
+  <img src="https://raw.githubusercontent.com/Aryawnfz/Aryawnfz/main/assets/header_stats.svg" height="56" alt="GitHub Stats"/>
+</div>
+
+<br/>
 
 <table align="center" width="100%">
 <tr>
