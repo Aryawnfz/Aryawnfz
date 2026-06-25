@@ -1,0 +1,147 @@
+@ -1,146 +0,0 @@
+<svg viewBox="0 0 1200 340" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Animated hue-rotating background gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1A0533">
+        <animate attributeName="stop-color" values="#1A0533;#12023A;#1E0A4A;#12023A;#1A0533" dur="12s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="45%" stop-color="#2D1068">
+        <animate attributeName="stop-color" values="#2D1068;#3B0F82;#24085C;#3B0F82;#2D1068" dur="12s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="100%" stop-color="#4C1D95">
+        <animate attributeName="stop-color" values="#4C1D95;#5B21B6;#3730A3;#5B21B6;#4C1D95" dur="12s" repeatCount="indefinite"/>
+      </stop>
+    </linearGradient>
+
+    <!-- Ambient orbs -->
+    <radialGradient id="orb1" cx="18%" cy="12%" r="50%">
+      <stop offset="0%" stop-color="#7C3AED" stop-opacity="0.40"/>
+      <stop offset="100%" stop-color="#7C3AED" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="orb2" cx="88%" cy="90%" r="50%">
+      <stop offset="0%" stop-color="#5B21B6" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#5B21B6" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="orb3" cx="55%" cy="50%" r="35%">
+      <stop offset="0%" stop-color="#6D28D9" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#6D28D9" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Frost blur for glass layers -->
+    <filter id="frost" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="14"/>
+    </filter>
+    <filter id="frostLight" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur stdDeviation="6"/>
+    </filter>
+    <filter id="glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+
+    <!-- Outer glass card clip -->
+    <clipPath id="outerCard">
+      <rect x="48" y="32" width="1104" height="276" rx="40"/>
+    </clipPath>
+    <!-- Inner glass panel clip -->
+    <clipPath id="innerPanel">
+      <rect x="80" y="60" width="1040" height="220" rx="28"/>
+    </clipPath>
+
+    <!-- Shine sweep gradient -->
+    <linearGradient id="shineSweep" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0"/>
+      <stop offset="42%" stop-color="#ffffff" stop-opacity="0.60"/>
+      <stop offset="50%" stop-color="#ffffff" stop-opacity="0.70"/>
+      <stop offset="58%" stop-color="#ffffff" stop-opacity="0.60"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+
+    <!-- Top highlight streak -->
+    <linearGradient id="topHighlight" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0"/>
+      <stop offset="25%" stop-color="#ffffff" stop-opacity="0.85"/>
+      <stop offset="55%" stop-color="#ffffff" stop-opacity="0.90"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+
+    <!-- Bottom rim light -->
+    <linearGradient id="bottomRim" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#4C1D95" stop-opacity="0"/>
+      <stop offset="30%" stop-color="#7C3AED" stop-opacity="0.50"/>
+      <stop offset="70%" stop-color="#6D28D9" stop-opacity="0.50"/>
+      <stop offset="100%" stop-color="#4C1D95" stop-opacity="0"/>
+    </linearGradient>
+
+    <!-- Pill / badge gradient -->
+    <linearGradient id="pillBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.22"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.08"/>
+    </linearGradient>
+    <linearGradient id="pillStroke" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.70"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.20"/>
+    </linearGradient>
+  </defs>
+
+  <!-- ═══ BACKGROUND — transparent canvas; gradient lives inside the rounded card only ═══ -->
+
+  <!-- ═══ OUTER GLASS CARD ═══ -->
+  <g clip-path="url(#outerCard)">
+    <!-- Gradient background — clipped to rounded card, no sharp corners -->
+    <rect x="48" y="32" width="1104" height="276" rx="40" fill="url(#bgGrad)"/>
+    <!-- Ambient colour orbs — inside clip so they don't bleed outside -->
+    <circle cx="220" cy="40" r="300" fill="url(#orb1)"/>
+    <circle cx="1060" cy="300" r="280" fill="url(#orb2)"/>
+    <circle cx="600" cy="170" r="260" fill="url(#orb3)"/>
+    <!-- Frosted glass fill -->
+    <rect x="48" y="32" width="1104" height="276" fill="#ffffff" opacity="0.09"/>
+    <!-- Inner ambient blur blobs -->
+    <g filter="url(#frost)" opacity="0.45">
+      <circle cx="200" cy="60" r="240" fill="#6D28D9" opacity="0.35"/>
+      <circle cx="1000" cy="280" r="240" fill="#4C1D95" opacity="0.35"/>
+      <circle cx="600" cy="160" r="180" fill="#5B21B6" opacity="0.22"/>
+    </g>
+    <!-- Animated shine sweep -->
+    <g transform="skewX(-16)" filter="url(#frostLight)">
+      <rect x="-300" y="-20" width="260" height="400" fill="url(#shineSweep)">
+        <animateTransform attributeName="transform" type="translate" from="-300 0" to="1600 0" dur="5s" repeatCount="indefinite"/>
+      </rect>
+    </g>
+  </g>
+
+  <!-- Outer card border (top-lit) -->
+  <rect x="48" y="32" width="1104" height="276" rx="40" fill="none" stroke="url(#pillStroke)" stroke-width="1.5"/>
+
+  <!-- ═══ INNER GLASS PANEL (deeper layer) ═══ -->
+  <g clip-path="url(#innerPanel)">
+    <rect x="80" y="60" width="1040" height="220" fill="#ffffff" opacity="0.07"/>
+    <g filter="url(#frostLight)" opacity="0.35">
+      <circle cx="300" cy="90" r="180" fill="#7C3AED" opacity="0.40"/>
+      <circle cx="950" cy="250" r="180" fill="#5B21B6" opacity="0.40"/>
+    </g>
+  </g>
+  <rect x="80" y="60" width="1040" height="220" rx="28" fill="none" stroke="#ffffff" stroke-opacity="0.25" stroke-width="1"/>
+
+  <!-- ═══ TOP SPECULAR HIGHLIGHT ═══ -->
+  <path d="M90 36 Q600 16 1110 36" stroke="url(#topHighlight)" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+
+  <!-- ═══ BOTTOM RIM LIGHT ═══ -->
+  <path d="M90 304 Q600 320 1110 304" stroke="url(#bottomRim)" stroke-width="2" fill="none" stroke-linecap="round"/>
+
+  <!-- ═══ CONTENT ═══ -->
+  <!-- Name — with subtle text shadow effect via layering -->
+  <text x="601" y="161" text-anchor="middle" font-family="Segoe UI, SF Pro Display, Helvetica Neue, Arial, sans-serif" font-size="58" font-weight="800" fill="#000000" opacity="0.18">Aryan Firoozzareh</text>
+  <text x="600" y="160" text-anchor="middle" font-family="Segoe UI, SF Pro Display, Helvetica Neue, Arial, sans-serif" font-size="58" font-weight="800" fill="#ffffff">Aryan Firoozzareh</text>
+
+  <!-- Role subtitle -->
+  <text x="600" y="202" text-anchor="middle" font-family="Segoe UI, SF Pro Display, Helvetica Neue, Arial, sans-serif" font-size="21" font-weight="400" fill="#E0E7FF" letter-spacing="0.5">Python Developer  ·  Web Scraping &amp; Automation Specialist</text>
+
+  <!-- ═══ LOCATION PILL ═══ -->
+  <rect x="462" y="226" width="276" height="42" rx="21" fill="url(#pillBg)" stroke="url(#pillStroke)" stroke-width="1.2"/>
+  <!-- Pill inner top shine -->
+  <rect x="463" y="227" width="274" height="18" rx="20" fill="#ffffff" opacity="0.12"/>
+  <text x="600" y="253" text-anchor="middle" font-family="Segoe UI, SF Pro Display, Helvetica Neue, Arial, sans-serif" font-size="17" fill="#ffffff" opacity="0.95">📍 Tehran, Iran 🇮🇷</text>
+
+</svg>
